@@ -1,0 +1,50 @@
+{
+  "name": "@yashvanth/cursorverse",
+  "version": "0.1.0",
+  "description": "Lightweight, customizable canvas cursor effects library for React and vanilla JavaScript. Includes fire, confetti, glow, snow, spark, ripple, magnetic, and trail effects for interactive web experiences and creative UI animations.",
+  "keywords": ["cursor", "custom-cursor", "cursor-effects", "canvas", "particles", "react", "animation", "trail", "interactive-ui", "webgl"],
+  "license": "MIT",
+  "author": "Yashvanth R",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/your-repo.git"
+  },
+  "homepage": "https://your-site.com",
+  "bugs": {
+    "url": "https://github.com/yourusername/your-repo/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/cursorverse.cjs",
+  "module": "./dist/cursorverse.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/cursorverse.js",
+      "require": "./dist/cursorverse.cjs"
+    },
+    "./react": {
+      "types": "./types/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "types", "README.md"],
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^4.5.14"
+  },
+  "engines": { "node": ">=16" }
+}

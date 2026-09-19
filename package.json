@@ -22,10 +22,10 @@
   "description": "Demo site and playground for the cursorverse package",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/your-repo.git"
+    "url": "https://github.com/Yashvanth-R/cursorverse.git"
   },
-  "homepage": "https://your-site.com",
+  "homepage": "https://cursorverse.vercel.app/",
   "bugs": {
-    "url": "https://github.com/yourusername/your-repo/issues"
+    "url": "https://github.com/Yashvanth-R/cursorverse/issues"
   }
 }

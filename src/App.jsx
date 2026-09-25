@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Home from './pages/Home'
 import EffectPage from './pages/EffectPage'
 
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/effect/:id" element={<EffectPage />} />
         </Routes>
       </main>
+      <Analytics />
     </div>
   )
 }
